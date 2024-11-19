@@ -1,0 +1,152 @@
+/* CSS Básico */
+body {
+    /*background: #333;
+    background-image: url("../img/papelfundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    background-color: rgb(192, 252, 219);
+    font-family: "Oxanium", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    color: black;
+    background-color: rgb(9, 197, 119);
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);        
+}
+
+h2 {
+    background-color: rgb(9, 197, 119);
+    border: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: #000000;
+    margin: 10px;
+}
+
+p {
+    color: dark;
+    background-color: rgb(9, 197, 119);
+    border: 2px solid black;
+    width: 99%; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+img {
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    max-width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+nav ul li {
+    margin-right: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0; 
+    background: #333;
+    color: white;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.mensagem {
+    color: black;
+    background-color: rgb(9, 197, 119);
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.whatsapp-button {
+    
+}
+
+.box, .box3 {
+    width: 90%;
+    max-width: 300px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(9, 197, 119);
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+.box1, .box4 {
+    width: 90%;
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(9, 197, 119);
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .whatsapp-button, .box, .box1, .box3, .box4 {
+        width: 90%;
+    }
+
+    .box, .box3 {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .mensagem {
+        font-size: 18px;
+    }
+
+    .box, .box3 {
+        padding: 15px;
+    }
+}
